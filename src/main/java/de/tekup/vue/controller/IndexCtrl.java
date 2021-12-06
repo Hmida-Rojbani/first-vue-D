@@ -31,7 +31,13 @@ public class IndexCtrl {
 		System.out.println(user);
 		UserDB.addUser(user);
 		System.out.println(UserDB.getUsers());
-		return "redirect:/";
+		return "redirect:/show/users";
+	}
+	
+	@GetMapping("/show/users")
+	public String getAllUSer(Model model) {
+		model.addAttribute("listUsers", UserDB.getUsers());
+		return "user/show-users";
 	}
 
 }
