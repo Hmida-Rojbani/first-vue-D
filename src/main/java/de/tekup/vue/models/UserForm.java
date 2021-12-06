@@ -21,8 +21,12 @@ public class UserForm {
 	
 	private String email;
 	
-	public void setDateOfBirth(String date) {
+	public void setDate(String date) {
 		dateOfBirth = LocalDate.parse(date);
+	}
+	
+	public String getDate() {
+		return dateOfBirth!=null ? dateOfBirth.toString() : null;
 	}
 
 }

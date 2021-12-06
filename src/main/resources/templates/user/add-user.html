@@ -108,6 +108,8 @@
 
 							<!-- Text input-->
 							<div class="form-group">
+							<input hidden="hidden" th:field="*{id}" id="name" name="name" type="text" placeholder=""
+										class="form-control input-md" required="">
 								<label class="col-md-4 control-label" for="name">User
 									name</label>
 								<div class="col-md-5">
@@ -130,7 +132,7 @@
 								<label class="col-md-4 control-label" for="date">Date of
 									Birth</label>
 								<div class="col-md-5">
-									<input th:field="*{dateOfBirth}" id="date" type="date" placeholder=""
+									<input th:field="*{date}" id="date" type="date" placeholder=""
 										class="form-control input-md" required="">
 
 								</div>
